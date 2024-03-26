@@ -3,13 +3,14 @@
 #
 # Andrej Mernik <andrejm@ubuntu.si>, 2014, 2015, 2016, 2017, 2018.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2024 Jure Repinc <jlp@holodeck1.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-06 00:39+0000\n"
-"PO-Revision-Date: 2023-08-30 10:22+0200\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
+"PO-Revision-Date: 2024-03-02 00:31+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #: package/contents/config/config.qml:16
 #, kde-format
@@ -248,7 +249,7 @@ msgstr "Velika"
 #: package/contents/ui/ConfigIcons.qml:266
 #, kde-format
 msgid "Label width:"
-msgstr "Širina značke:"
+msgstr "Širina oznake:"
 
 #: package/contents/ui/ConfigIcons.qml:269
 #, kde-format
@@ -413,48 +414,49 @@ msgstr ""
 "Na namizju je veliko datotek in map. To lahko povzroči napake in težave z "
 "delovanjem. Prosimo, razmislite o tem, da nekatere od njih premaknete drugam."
 
-#: package/contents/ui/main.qml:390
-#, kde-format
-msgid "Configure Desktop and Wallpaper…"
-msgstr "Nastavi namizje in ozadje…"
+#: package/contents/ui/main.qml:391
+#, fuzzy, kde-format
+#| msgid "Configure Desktop and Wallpaper…"
+msgid "Desktop and Wallpaper"
+msgstr "Nastavi namizje in ozadje …"
 
 #: plugins/folder/directorypicker.cpp:32
 #, kde-format
 msgid "Select Folder"
 msgstr "Izberi mapo"
 
-#: plugins/folder/foldermodel.cpp:466
+#: plugins/folder/foldermodel.cpp:468
 #, kde-format
 msgid "&Refresh Desktop"
 msgstr "Osveži namizje"
 
-#: plugins/folder/foldermodel.cpp:466 plugins/folder/foldermodel.cpp:1630
+#: plugins/folder/foldermodel.cpp:468 plugins/folder/foldermodel.cpp:1633
 #, kde-format
 msgid "&Refresh View"
 msgstr "Osveži prikaz"
 
-#: plugins/folder/foldermodel.cpp:1639
+#: plugins/folder/foldermodel.cpp:1642
 #, kde-format
 msgid "&Empty Trash"
 msgstr "Izprazni Sm&eti"
 
-#: plugins/folder/foldermodel.cpp:1642
+#: plugins/folder/foldermodel.cpp:1645
 #, kde-format
 msgctxt "Restore from trash"
 msgid "Restore"
 msgstr "Obnovi"
 
-#: plugins/folder/foldermodel.cpp:1645
+#: plugins/folder/foldermodel.cpp:1648
 #, kde-format
 msgid "&Open"
 msgstr "&Odpri"
 
-#: plugins/folder/foldermodel.cpp:1762
+#: plugins/folder/foldermodel.cpp:1765
 #, kde-format
 msgid "&Paste"
 msgstr "&Prilepi"
 
-#: plugins/folder/foldermodel.cpp:1879
+#: plugins/folder/foldermodel.cpp:1881
 #, kde-format
 msgid "&Properties"
 msgstr "Lastnosti"

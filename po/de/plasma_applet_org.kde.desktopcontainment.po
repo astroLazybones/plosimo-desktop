@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-06 00:39+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2023-02-26 00:39+0100\n"
 "Last-Translator: Jannick Kuhr <opensource@kuhr.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -409,9 +409,10 @@ msgid ""
 "performance issues. Please consider moving some of them elsewhere."
 msgstr ""
 
-#: package/contents/ui/main.qml:390
-#, kde-format
-msgid "Configure Desktop and Wallpaper…"
+#: package/contents/ui/main.qml:391
+#, fuzzy, kde-format
+#| msgid "Configure Desktop and Wallpaper…"
+msgid "Desktop and Wallpaper"
 msgstr "Arbeitsfläche und Hintergrundbild einrichten ..."
 
 #: plugins/folder/directorypicker.cpp:32
@@ -419,38 +420,38 @@ msgstr "Arbeitsfläche und Hintergrundbild einrichten ..."
 msgid "Select Folder"
 msgstr "Ordner auswählen"
 
-#: plugins/folder/foldermodel.cpp:466
+#: plugins/folder/foldermodel.cpp:468
 #, kde-format
 msgid "&Refresh Desktop"
 msgstr "Arbeitsfläche neu &aufbauen"
 
-#: plugins/folder/foldermodel.cpp:466 plugins/folder/foldermodel.cpp:1630
+#: plugins/folder/foldermodel.cpp:468 plugins/folder/foldermodel.cpp:1633
 #, kde-format
 msgid "&Refresh View"
 msgstr "Ansicht a&ktualisieren"
 
-#: plugins/folder/foldermodel.cpp:1639
+#: plugins/folder/foldermodel.cpp:1642
 #, kde-format
 msgid "&Empty Trash"
 msgstr "Papierkorb &leeren"
 
-#: plugins/folder/foldermodel.cpp:1642
+#: plugins/folder/foldermodel.cpp:1645
 #, kde-format
 msgctxt "Restore from trash"
 msgid "Restore"
 msgstr "Wiederherstellen"
 
-#: plugins/folder/foldermodel.cpp:1645
+#: plugins/folder/foldermodel.cpp:1648
 #, kde-format
 msgid "&Open"
 msgstr "Ö&ffnen"
 
-#: plugins/folder/foldermodel.cpp:1762
+#: plugins/folder/foldermodel.cpp:1765
 #, kde-format
 msgid "&Paste"
 msgstr "&Einfügen"
 
-#: plugins/folder/foldermodel.cpp:1879
+#: plugins/folder/foldermodel.cpp:1881
 #, kde-format
 msgid "&Properties"
 msgstr "&Eigenschaften"

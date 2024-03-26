@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2022-09-30 18:07+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -65,15 +65,11 @@ msgstr "Anpassa aktivitet"
 msgid "Delete"
 msgstr "Ta bort"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Tyvärr uppstod ett fel vid inläsning av %1."
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Kopiera till klippbordet"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Visa felinformation…"
 
@@ -261,71 +257,77 @@ msgstr "Musåtgärder"
 msgid "Input Here"
 msgstr "Skriv in här"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 #, fuzzy
 #| msgid "Settings"
 msgid "Panel Settings"
 msgstr "Inställningar"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Lägg till mellanrum"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Lägg till grafiska komponenter…"
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Längst upp"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Höger"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Vänster"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Längst ner"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 #, fuzzy
 #| msgid "More Options…"
 msgid "Set Position…"
 msgstr "Fler alternativ…"
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 #, fuzzy
 #| msgid "Panel Alignment"
 msgid "Alignment"
 msgstr "Paneljustering"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "Centrera"
 
+#: contents/configuration/PanelConfiguration.qml:290
+#, fuzzy
+#| msgid "Height"
+msgid "Height"
+msgstr "Höjd"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr ""
+msgid "Width"
+msgstr "Bredd"
 
 #: contents/configuration/PanelConfiguration.qml:310
 #, fuzzy
@@ -407,36 +409,36 @@ msgstr ""
 msgid "Floating"
 msgstr "Fristående panel"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 #, fuzzy
 #| msgid "Panel width:"
 msgid "Panel Width:"
 msgstr "Panelbredd:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 #, fuzzy
 #| msgid "Height"
 msgid "Height:"
 msgstr "Höjd"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Focus shortcut:"
 msgstr "Genväg"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 #, fuzzy
 #| msgid "Remove Panel"
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Ta bort panel"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr ""
 
@@ -470,7 +472,9 @@ msgstr ""
 "Dubbelklicka för att återställa."
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Hantering av paneler och skrivbord"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -565,6 +569,9 @@ msgstr "Inga grafiska komponenter motsvarade sökbegreppen"
 msgid "No widgets available"
 msgstr "Inga grafiska komponenter tillgängliga"
 
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Tyvärr uppstod ett fel vid inläsning av %1."
+
 #, fuzzy
 #~| msgid "Maximize Panel"
 #~ msgctxt "@action:button Make the panel as big as it can be"
@@ -618,9 +625,6 @@ msgstr "Inga grafiska komponenter tillgängliga"
 #~ msgid "Click and drag the button to a screen edge to move the panel there."
 #~ msgstr ""
 #~ "Klicka och dra knappen till en skärmkant för att flytta panelen dit."
-
-#~ msgid "Width"
-#~ msgstr "Bredd"
 
 #~ msgid "Click and drag the button to resize the panel."
 #~ msgstr "Klicka och dra knappen för att ändra panelens storlek."

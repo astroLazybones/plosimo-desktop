@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_shell_org.kde.desktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2024-02-08 15:20+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -67,15 +67,11 @@ msgstr "アクティビティを設定"
 msgid "Delete"
 msgstr "削除"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "すみません。%1 の読み込み中にエラーが発生しました。"
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "クリップボードにコピー"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "エラーの詳細を表示..."
 
@@ -263,65 +259,71 @@ msgstr "マウスアクション"
 msgid "Input Here"
 msgstr "ここに入力"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "パネル設定"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "スペーサーを追加"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr "スペーサーウィジェットをパネルに追加"
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "ウィジェットを追加..."
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr "ウィジェットをセレクタからパネルにドラッグ＆ドロップ"
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "位置"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "上"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "右"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "左"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "下"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 msgid "Set Position…"
 msgstr "設定..."
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "配置"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "中央"
 
+#: contents/configuration/PanelConfiguration.qml:290
+#, fuzzy
+#| msgid "Height:"
+msgid "Height"
+msgstr "高さ:"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "長さ"
+msgid "Width"
+msgstr ""
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -383,28 +385,28 @@ msgstr "スタイル"
 msgid "Floating"
 msgstr "フローティング"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "パネルの幅:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "高さ:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 msgid "Focus shortcut:"
 msgstr "フォーカスショートカット:"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr "キーボードショートカットを押してパネルをフォーカス"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "パネルを削除"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr "このパネルを削除します。この操作は取り消せません"
 
@@ -438,7 +440,9 @@ msgstr ""
 "ダブルクリックしてリセット"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "パネルとデスクトップの管理"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -527,3 +531,9 @@ msgstr "検索語に一致するウィジェットはありません"
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets available"
 msgstr "利用可能なウィジェットはありません"
+
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "すみません。%1 の読み込み中にエラーが発生しました。"
+
+#~ msgid "Length"
+#~ msgstr "長さ"

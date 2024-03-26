@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
-"PO-Revision-Date: 2024-01-30 08:30+0100\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
+"PO-Revision-Date: 2024-02-15 12:22+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -65,15 +65,11 @@ msgstr "Configura activitate "
 msgid "Delete"
 msgstr "Dele"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Desolate! Il habeva un error a cargar %1"
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Copia  in area de transferentia"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Vide detalios de error..."
 
@@ -263,66 +259,70 @@ msgstr "Actiones de mus"
 msgid "Input Here"
 msgstr "Inserta ci"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "Preferentias de Pannello"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Adde spatiator"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr "Adde widget spatiator al pannello"
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Adde Widgets..."
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 "Aperi le selector de widget per traher e poner le widgets in le pannello"
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "Position"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Culmine"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Dextera"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Sinistra"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Basso"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 msgid "Set Position…"
 msgstr "Assigna position..."
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "Alineamento"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "Centro"
 
+#: contents/configuration/PanelConfiguration.qml:290
+msgid "Height"
+msgstr "Altessa"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "Longitude"
+msgid "Width"
+msgstr "Largessa"
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -384,28 +384,28 @@ msgstr "Stilo"
 msgid "Floating"
 msgstr "Fluctuante"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "Largessa de Pannello:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "Altessa:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 msgid "Focus shortcut:"
 msgstr "Via Breve de Foco:"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr "Pressa iste via breve de claviero pro mover foco al Pannello"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Dele pannello"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr ""
 "Remove iste pannello: iste action es sub le commando que on pote annullar"
@@ -440,7 +440,9 @@ msgstr ""
 "Duple clicca pro refixar."
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Gstion de Pannellos e Scriptorios"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -532,6 +534,12 @@ msgstr "Necun widgets coincideva con le terminos de cerca"
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets available"
 msgstr "Necun widgets disponibile"
+
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Desolate! Il habeva un error a cargar %1"
+
+#~ msgid "Length"
+#~ msgstr "Longitude"
 
 #~ msgctxt "@action:button Make the panel as big as it can be"
 #~ msgid "Maximize"
@@ -695,9 +703,6 @@ msgstr "Necun widgets disponibile"
 
 #~ msgid "Add Widgets..."
 #~ msgstr "Adde Widgets..."
-
-#~ msgid "Width"
-#~ msgstr "Largessa"
 
 #~ msgid "Layout cannot be changed while widgets are locked"
 #~ msgstr "Disposition non pote esser modificate quando le widgets es blocate"

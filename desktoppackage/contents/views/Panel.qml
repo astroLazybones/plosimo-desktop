@@ -58,10 +58,11 @@ Item {
     readonly property int fixedRightFloatingPadding: floating && (floatingPrefix ? floatingPanelSvg.fixedMargins.right  : 8)
     readonly property int fixedTopFloatingPadding: floating && (floatingPrefix ? floatingPanelSvg.fixedMargins.top    : 8)
 
-    readonly property int bottomFloatingPadding: Math.round(fixedBottomFloatingPadding * floatingness)
-    readonly property int leftFloatingPadding: Math.round(fixedLeftFloatingPadding * floatingness)
-    readonly property int rightFloatingPadding: Math.round(fixedRightFloatingPadding * floatingness)
-    readonly property int topFloatingPadding: Math.round(fixedTopFloatingPadding * floatingness)
+    // Not rounded to smoothen the animation
+    readonly property real bottomFloatingPadding: fixedBottomFloatingPadding * floatingness
+    readonly property real leftFloatingPadding: fixedLeftFloatingPadding * floatingness
+    readonly property real rightFloatingPadding: fixedRightFloatingPadding * floatingness
+    readonly property real topFloatingPadding: fixedTopFloatingPadding * floatingness
 
     readonly property int minPanelHeight: translucentItem.minimumDrawingHeight
     readonly property int minPanelWidth: translucentItem.minimumDrawingWidth
@@ -108,20 +109,18 @@ Item {
 
         Binding on regionGeometry {
             delayed: true
-            property real verticalMargin: (fixedTopFloatingPadding + fixedBottomFloatingPadding) * (1 - floatingness)
-            property real horizontalMargin: (fixedLeftFloatingPadding + fixedRightFloatingPadding) * (1 - floatingness)
 
             // This makes the panel de-float when a window is 12px from it or less.
             // 12px is chosen to avoid any potential issue with kwin snapping behavior,
             // and it looks like the panel hides away from the active window.
-            property int defloatDistance: 12 + (verticalPanel ? horizontalMargin : verticalMargin)
+            property int defloatDistance: 12
             // Instead, we will only dodge an active panel if the panel is covered by it,
             // i.e. if the window touches at least one pixel of the panel
             property int dodgeDistance: -1
             // We don't have to worry about dealing with both at the same time since
             // dodge-window panels never de-float.
 
-            value: floatingness, panel.width, panel.height, panel.x, panel.y, panel.geometryByDistance(panel.visibilityMode === Panel.Global.DodgeWindows ? dodgeDistance : defloatDistance)
+            value: panel.width, panel.height, panel.x, panel.y, panel.dogdeGeometryByDistance(panel.visibilityMode === Panel.Global.DodgeWindows ? dodgeDistance : defloatDistance)
         }
     }
 
@@ -137,15 +136,12 @@ Item {
     }
 
     // Floatingness is a value in [0, 1] that's multiplied to the floating margin; 0: not floating, 1: floating, between 0 and 1: animation between the two states
-    property double floatingness
+    readonly property int floatingnessAnimationDuration: Kirigami.Units.longDuration
+    property double floatingnessTarget: 0.0 // The animation is handled in panelview.cpp for efficiency
+    property double floatingness: 0.0
+
     // PanelOpacity is a value in [0, 1] that's used as the opacity of the opaque elements over the transparent ones; values between 0 and 1 are used for animations
     property double panelOpacity
-    Behavior on floatingness {
-        NumberAnimation {
-            duration: Kirigami.Units.longDuration
-            easing.type: Easing.OutCubic
-        }
-    }
     Behavior on panelOpacity {
         NumberAnimation {
             duration: Kirigami.Units.longDuration
@@ -157,9 +153,8 @@ Item {
     property bool hasShadows: floatingness < 0.5
     property var panelMask: floatingness === 0 ? (panelOpacity === 1 ? opaqueItem.mask : translucentItem.mask) : (panelOpacity === 1 ? floatingOpaqueItem.mask : floatingTranslucentItem.mask)
 
-    // These two values are read from panelview.cpp and are used as an offset for the mask
-    property int maskOffsetX: floatingTranslucentItem.x
-    property int maskOffsetY: floatingTranslucentItem.y
+    // The point is read from panelview.cpp and is used as an offset for the mask
+    readonly property point floatingTranslucentItemOffset: Qt.point(floatingTranslucentItem.x, floatingTranslucentItem.y)
 
     KSvg.FrameSvgItem {
         id: translucentItem
@@ -225,18 +220,18 @@ Item {
         if ((!floating || screenCovered) && (isOpaque || (screenCovered && isAdaptive))) {
             panelOpacity = 1
             opaqueApplets = true
-            floatingness = 0
+            floatingnessTarget = 0
         } else if ((!floating || screenCovered) && (isTransparent || (!screenCovered && isAdaptive))) {
             panelOpacity = 0
-            floatingness = 0
+            floatingnessTarget = 0
         } else if ((floating && !screenCovered) && (isTransparent || isAdaptive)) {
             panelOpacity = 0
-            floatingness = 1
+            floatingnessTarget = 1
             floatingApplets = true
         } else if (floating && !screenCovered && isOpaque) {
             panelOpacity = 1
             opaqueApplets = true
-            floatingness = 1
+            floatingnessTarget = 1
             floatingApplets = true
         }
         if (!KWindowSystem.isPlatformWayland && !KX11Extras.compositingActive) {

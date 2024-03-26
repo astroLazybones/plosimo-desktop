@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-desktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
-"PO-Revision-Date: 2024-02-02 22:38+0100\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
+"PO-Revision-Date: 2024-02-16 21:15+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -66,15 +66,11 @@ msgstr "Agordi agadon"
 msgid "Delete"
 msgstr "Forigi"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Pardonu! Okazis eraro dum la ŝargo de %1."
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Kopii al tondujo"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Rigardi erardetalojn…"
 
@@ -261,67 +257,71 @@ msgstr "Musaj Agoj"
 msgid "Input Here"
 msgstr "Enigo Ĉi tie"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "Panelaj Agordoj"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Aldoni Spacigilon"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr "Aldoni interspacan fenestraĵon al la panelo"
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Aldoni Fenestraĵojn…"
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 "Malfermi la fenestraĵ-elektilon por treni kaj faligi fenestraĵojn al la "
 "panelo"
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "Pozicio"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Supre"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Ĝuste"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Maldekstre"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Fundo"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 msgid "Set Position…"
 msgstr "Meti Pozicion…"
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "Ĝisrandigo"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "Centro"
 
+#: contents/configuration/PanelConfiguration.qml:290
+msgid "Height"
+msgstr "Alteco"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "Longeco"
+msgid "Width"
+msgstr "Larĝeco"
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -383,28 +383,28 @@ msgstr "Stilo"
 msgid "Floating"
 msgstr "Glita"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "Panel-Larĝeco:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "Alteco:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 msgid "Focus shortcut:"
 msgstr "Fokus-ŝparvojo:"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr "Premu ĉi tiun klavkombinon por movi fokuson al la Panelo"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Forigi Panelon"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr "Forigi ĉi panelon; tiu ago estas malfarebla"
 
@@ -438,7 +438,9 @@ msgstr ""
 "Duoble alklaku por restarigi."
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Administrado de Paneloj kaj Labortabloj"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -529,3 +531,6 @@ msgstr "Neniuj fenestraĵoj kongruis kun la serĉaj terminoj"
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets available"
 msgstr "Neniuj fenestraĵoj haveblaj"
+
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Pardonu! Okazis eraro dum la ŝargo de %1."

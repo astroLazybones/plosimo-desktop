@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2022-08-20 17:31+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -65,15 +65,11 @@ msgstr "Indstil aktivitet"
 msgid "Delete"
 msgstr "Slet"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Beklager! Der opstod en fejl under indlæsning af %1."
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Kopiér til udklipsholderen"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Vis fejldetaljer..."
 
@@ -263,71 +259,77 @@ msgstr "Musehandlinger"
 msgid "Input Here"
 msgstr "Input her"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 #, fuzzy
 #| msgid "Apply Settings"
 msgid "Panel Settings"
 msgstr "Anvend indstillinger"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Tilføj afstandsstykke"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Tilføj widgets…"
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Øverst"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Højre"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Venstre"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Nederst"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 #, fuzzy
 #| msgid "More Options…"
 msgid "Set Position…"
 msgstr "Flere indstillinger…"
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 #, fuzzy
 #| msgid "Panel Alignment"
 msgid "Alignment"
 msgstr "Paneljustering"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "Centreret"
 
+#: contents/configuration/PanelConfiguration.qml:290
+#, fuzzy
+#| msgid "Height"
+msgid "Height"
+msgstr "Højde"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr ""
+msgid "Width"
+msgstr "Bredde"
 
 #: contents/configuration/PanelConfiguration.qml:310
 #, fuzzy
@@ -409,36 +411,36 @@ msgstr ""
 msgid "Floating"
 msgstr "Frit flydende panel"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 #, fuzzy
 #| msgid "Panel width:"
 msgid "Panel Width:"
 msgstr "Panelets bredde:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 #, fuzzy
 #| msgid "Height"
 msgid "Height:"
 msgstr "Højde"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Focus shortcut:"
 msgstr "Genvej"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 #, fuzzy
 #| msgid "Remove Panel"
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Fjern panel"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr ""
 
@@ -470,7 +472,9 @@ msgid ""
 msgstr ""
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Håndtering af planer og skriveborde"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -565,6 +569,9 @@ msgstr "Ingen widgets matchede søgeordene"
 msgid "No widgets available"
 msgstr "Ingen widgets tilgængelige"
 
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Beklager! Der opstod en fejl under indlæsning af %1."
+
 #, fuzzy
 #~| msgid "Maximize Panel"
 #~ msgctxt "@action:button Make the panel as big as it can be"
@@ -618,9 +625,6 @@ msgstr "Ingen widgets tilgængelige"
 
 #~ msgid "Add Widgets..."
 #~ msgstr "Tilføj widgets..."
-
-#~ msgid "Width"
-#~ msgstr "Bredde"
 
 #~ msgid "Click and drag the button to resize the panel."
 #~ msgstr "Klik og træk knappen for at ændre panelets størrelse."

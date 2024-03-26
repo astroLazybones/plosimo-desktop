@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-desktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-03-12 00:39+0000\n"
 "PO-Revision-Date: 2024-01-30 07:19+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -169,107 +169,107 @@ msgctxt "@action:menu End of the sentence 'Add New Command or Script…'"
 msgid "Command or Script…"
 msgstr "Ukaz ali skript…"
 
-#: ui/main.qml:223
+#: ui/main.qml:226
 #, kde-format
 msgctxt "@tooltip:button %1 is the text of a custom command"
 msgid "Edit command for %1"
 msgstr "Uredi ukaz za %1"
 
-#: ui/main.qml:239
+#: ui/main.qml:242
 #, kde-format
 msgid "Remove all shortcuts for %1"
 msgstr "Odstrani vse bližnjice za %1"
 
-#: ui/main.qml:250
+#: ui/main.qml:253
 #, kde-format
 msgid "Undo deletion"
 msgstr "Razveljavi brisanje"
 
-#: ui/main.qml:304
+#: ui/main.qml:307
 #, kde-format
 msgid "No items matched the search terms"
 msgstr "Ni postavk, ki bi ustrezale kriteriju iskanja"
 
-#: ui/main.qml:337
+#: ui/main.qml:340
 #, kde-format
 msgid "Select an item from the list to view its shortcuts here"
 msgstr "Izberite predmet s seznama, da si ogledate njegove bližnjice"
 
-#: ui/main.qml:349
+#: ui/main.qml:352
 #, kde-format
 msgid "Export Shortcut Scheme"
 msgstr "Izvozi shemo bližnjic"
 
-#: ui/main.qml:349 ui/main.qml:467
+#: ui/main.qml:352 ui/main.qml:470
 #, kde-format
 msgid "Import Shortcut Scheme"
 msgstr "Uvozi shemo bližnjic"
 
-#: ui/main.qml:351
+#: ui/main.qml:354
 #, kde-format
 msgctxt "Template for file dialog"
 msgid "Shortcut Scheme (*.kksrc)"
 msgstr "Shema bližnjic (*.kksrc)"
 
-#: ui/main.qml:379
+#: ui/main.qml:382
 #, kde-format
 msgid "Edit Command"
 msgstr "Uredi ukaz"
 
-#: ui/main.qml:379
+#: ui/main.qml:382
 #, kde-format
 msgid "Add Command"
 msgstr "Dodaj ukaz"
 
-#: ui/main.qml:397
+#: ui/main.qml:400
 #, kde-format
 msgid "Save"
 msgstr "Shrani"
 
-#: ui/main.qml:397
+#: ui/main.qml:400
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
 
-#: ui/main.qml:423
+#: ui/main.qml:426
 #, kde-format
 msgid "Enter a command or choose a script file:"
 msgstr "Vnesi ukaz ali izberi datoteko s skriptom:"
 
-#: ui/main.qml:438
+#: ui/main.qml:441
 #, kde-format
 msgctxt "@action:button"
 msgid "Choose…"
 msgstr "Izberi…"
 
-#: ui/main.qml:451
+#: ui/main.qml:454
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Script File"
 msgstr "Izberi datoteko s skriptom"
 
-#: ui/main.qml:453
+#: ui/main.qml:456
 #, kde-format
 msgctxt "Template for file dialog"
 msgid "Script file (*.*sh)"
 msgstr "Datoteka s skriptom (*.*sh)"
 
-#: ui/main.qml:474
+#: ui/main.qml:477
 #, kde-format
 msgid "Select the scheme to import:"
 msgstr "Izberi shemo za uvoz:"
 
-#: ui/main.qml:492
+#: ui/main.qml:495
 #, kde-format
 msgid "Custom Scheme"
 msgstr "Shema po meri"
 
-#: ui/main.qml:497
+#: ui/main.qml:500
 #, kde-format
 msgid "Select File…"
 msgstr "Izberi datoteko…"
 
-#: ui/main.qml:497
+#: ui/main.qml:500
 #, kde-format
 msgid "Import"
 msgstr "Uvoz"
@@ -279,7 +279,7 @@ msgstr "Uvoz"
 msgid "Editing shortcut: %1"
 msgstr "Urejanje bližnjice: %1"
 
-#: ui/ShortcutActionDelegate.qml:50
+#: ui/ShortcutActionDelegate.qml:53
 #, kde-format
 msgctxt ""
 "%1 is the name action that is triggered by the key sequences following "
@@ -287,12 +287,12 @@ msgctxt ""
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/ShortcutActionDelegate.qml:74
+#: ui/ShortcutActionDelegate.qml:77
 #, kde-format
 msgid "No active shortcuts"
 msgstr "Ni aktivnih bližnjic"
 
-#: ui/ShortcutActionDelegate.qml:116
+#: ui/ShortcutActionDelegate.qml:120
 #, kde-format
 msgctxt "%1 decides if singular or plural will be used"
 msgid "Default shortcut"
@@ -302,37 +302,37 @@ msgstr[1] "Privzeti bližnjici"
 msgstr[2] "Privzete bližnjice"
 msgstr[3] "Privzete bližnjice"
 
-#: ui/ShortcutActionDelegate.qml:118
+#: ui/ShortcutActionDelegate.qml:122
 #, kde-format
 msgid "No default shortcuts"
 msgstr "Ni privzetih bližnjic"
 
-#: ui/ShortcutActionDelegate.qml:127
+#: ui/ShortcutActionDelegate.qml:131
 #, kde-format
 msgid "Default shortcut %1 is enabled."
 msgstr "Privzeta bližnjica %1 je omogočena."
 
-#: ui/ShortcutActionDelegate.qml:127
+#: ui/ShortcutActionDelegate.qml:131
 #, kde-format
 msgid "Default shortcut %1 is disabled."
 msgstr "Privzeta bližnjica %1 je onemogočena."
 
-#: ui/ShortcutActionDelegate.qml:149
+#: ui/ShortcutActionDelegate.qml:154
 #, kde-format
 msgid "Custom shortcuts"
 msgstr "Bližnjice po meri"
 
-#: ui/ShortcutActionDelegate.qml:176
+#: ui/ShortcutActionDelegate.qml:183
 #, kde-format
 msgid "Delete this shortcut"
 msgstr "Izbriši to bližnjico"
 
-#: ui/ShortcutActionDelegate.qml:182
+#: ui/ShortcutActionDelegate.qml:189
 #, kde-format
 msgid "Add custom shortcut"
 msgstr "Dodaj bližnjico po meri"
 
-#: ui/ShortcutActionDelegate.qml:219
+#: ui/ShortcutActionDelegate.qml:227
 #, kde-format
 msgid "Cancel capturing of new shortcut"
 msgstr "Prekliči zajem nove bližnjice"

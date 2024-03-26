@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_shell_org.kde.plasma.desktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
-"PO-Revision-Date: 2024-01-30 23:57+0200\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
+"PO-Revision-Date: 2024-02-15 16:59+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -68,15 +68,11 @@ msgstr "Налаштувати простір дій"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Вибачте! Маємо помилку під час завантаження %1."
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Копіювати до буфера"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Переглянути подробиці щодо помилки…"
 
@@ -264,67 +260,71 @@ msgstr "Дії для миші"
 msgid "Input Here"
 msgstr "Тут слід ввести дані"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "Параметри панелі"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Додати розпірку"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr "Додати віджет-розпірку на панель"
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Додати віджети…"
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 "Відкрити засіб вибору віджетів для перетягування і скидання віджетів на "
 "панель"
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "Позиція"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Вгору"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Праворуч"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Ліворуч"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Вниз"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 msgid "Set Position…"
 msgstr "Встановити позицію…"
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "Вирівнювання"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "За центром"
 
+#: contents/configuration/PanelConfiguration.qml:290
+msgid "Height"
+msgstr "Висота"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "Довжина"
+msgid "Width"
+msgstr "Ширина"
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -386,28 +386,28 @@ msgstr "Стиль"
 msgid "Floating"
 msgstr "Рухома"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "Ширина панелі:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "Висота:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 msgid "Focus shortcut:"
 msgstr "Скорочення фокусування:"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr "Натисніть цю комбінацію клавіш, щоб передати фокус панелі"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Вилучити панель"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr "Вилучити цю панель; наслідки цієї дії можна скасувати"
 
@@ -441,7 +441,9 @@ msgstr ""
 "Двічі клацніть, щоб відновити початкові параметри."
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Керування панелями і стільницями"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -534,6 +536,12 @@ msgstr "Критерію пошуку не задовольняє жоден в�
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets available"
 msgstr "Немає доступних віджетів"
+
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Вибачте! Маємо помилку під час завантаження %1."
+
+#~ msgid "Length"
+#~ msgstr "Довжина"
 
 #~ msgctxt "@action:button Make the panel as big as it can be"
 #~ msgid "Maximize"
@@ -696,9 +704,6 @@ msgstr "Немає доступних віджетів"
 #~ msgstr ""
 #~ "Натисніть кнопку миші і перетягніть кнопку до краю екрана, щоб пересунути "
 #~ "туди панель."
-
-#~ msgid "Width"
-#~ msgstr "Ширина"
 
 #~ msgid "Click and drag the button to resize the panel."
 #~ msgstr ""

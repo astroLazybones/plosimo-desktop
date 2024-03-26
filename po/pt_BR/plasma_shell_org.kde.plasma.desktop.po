@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-desktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2023-11-14 14:07-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -67,15 +67,11 @@ msgstr "Configurar atividade"
 msgid "Delete"
 msgstr "Excluir"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "Desculpe! Ocorreu um erro ao carregar %1."
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "Ver detalhes do erro…"
 
@@ -264,67 +260,73 @@ msgstr "Ações do mouse"
 msgid "Input Here"
 msgstr "Clique aqui"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "Configurações do painel"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "Adicionar espaçador"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "Adicionar widgets..."
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "Posição"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "Superior"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "Direita"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "Esquerda"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "Inferior"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 #, fuzzy
 #| msgid "Set Position..."
 msgid "Set Position…"
 msgstr "Definir posição..."
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "Alinhamento"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "Centro"
 
+#: contents/configuration/PanelConfiguration.qml:290
+#, fuzzy
+#| msgid "Height:"
+msgid "Height"
+msgstr "Altura:"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "Comprimento"
+msgid "Width"
+msgstr "Largura"
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -392,30 +394,30 @@ msgstr "Estilo"
 msgid "Floating"
 msgstr "Painel flutuante"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "Largura do painel:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "Altura:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Focus shortcut:"
 msgstr "Atalho"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
 msgstr "Pressione este atalho de teclado para mover o foco para o painel"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "Excluir painel"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr "Exclui este painel; esta ação não pode ser desfeita"
 
@@ -449,7 +451,9 @@ msgstr ""
 "Clique duplo para redefinir."
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "Gerenciamento de painéis e áreas de trabalho"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
@@ -542,6 +546,12 @@ msgstr "Nenhum widget corresponde aos termos da pesquisa"
 msgid "No widgets available"
 msgstr "Nenhum widget disponível"
 
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "Desculpe! Ocorreu um erro ao carregar %1."
+
+#~ msgid "Length"
+#~ msgstr "Comprimento"
+
 #~ msgctxt "@action:button Make the panel as big as it can be"
 #~ msgid "Maximize"
 #~ msgstr "Maximizar"
@@ -594,9 +604,6 @@ msgstr "Nenhum widget disponível"
 #~ msgid "Click and drag the button to a screen edge to move the panel there."
 #~ msgstr ""
 #~ "Clique e arraste o botão para uma borda da tela para mover o painel ali."
-
-#~ msgid "Width"
-#~ msgstr "Largura"
 
 #~ msgid "Click and drag the button to resize the panel."
 #~ msgstr "Clique e arraste o botão para redimensionar o painel."

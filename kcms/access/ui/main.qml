@@ -7,16 +7,19 @@
 import QtQuick 2.9
 import QtQuick.Layouts 1.12
 import QtQuick.Window 2.2
-import QtQuick.Controls 2.14 as QQC2
+import QtQuick.Controls as QQC2
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.kirigami.delegates as KD
 import org.kde.kcmutils as KCM
+import org.kde.kwindowsystem
 
-KCM.SimpleKCM {
+KCM.AbstractKCM {
     id: root
 
-    implicitWidth: Kirigami.Units.gridUnit * 44
+    implicitWidth: Kirigami.Units.gridUnit * 45
     implicitHeight: Kirigami.Units.gridUnit * 25
+
+    framedView: false
 
     property var elements: [
         {
@@ -43,18 +46,27 @@ KCM.SimpleKCM {
             icon: "audio-input-microphone",
             title: i18nc("System mouse navigation", "Screen Reader"),
             defaultnessKey: "screenReaderIsDefaults"
+        },
+        {
+            icon: "cursor-arrow",
+            title: i18nc("Shake cursor to find it", "Shake Cursor"),
+            defaultnessKey: "shakeCursorIsDefaults",
+            available: KWindowSystem.isPlatformWayland
         }
     ]
 
     RowLayout {
         id: mainLayout
-        anchors.margins: Kirigami.Units.largeSpacing
+        anchors.fill: parent
+        spacing: 0
+
         QQC2.ScrollView {
             id: leftSidePaneBackground
-            contentHeight: root.contentItem.height -  Kirigami.Units.gridUnit * 4
-            contentWidth: Kirigami.Units.gridUnit * 13
+            Layout.fillHeight: true
+            Layout.minimumWidth: Kirigami.Units.gridUnit * 13
 
-            Component.onCompleted: leftSidePaneBackground.background.visible = true
+            Kirigami.Theme.colorSet: Kirigami.Theme.View
+            Kirigami.Theme.inherit: false
 
             ListView {
                 id: listView
@@ -63,8 +75,6 @@ KCM.SimpleKCM {
                 keyNavigationEnabled: true
                 model: elements
 
-                onCurrentIndexChanged: stackView.currentIndex = currentIndex
-
                 delegate: QQC2.ItemDelegate {
                     id: baseDelegate
 
@@ -72,6 +82,7 @@ KCM.SimpleKCM {
 
                     icon.name: modelData.icon
                     text: modelData.title
+                    visible: modelData.available === undefined || modelData.available
 
                     onClicked: {
                         listView.currentIndex = index
@@ -100,33 +111,55 @@ KCM.SimpleKCM {
             }
         }
 
-        StackLayout {
-            id: stackView
+        Kirigami.Separator {
+            Layout.fillHeight: true
+        }
+
+        Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
+            Kirigami.Theme.colorSet: Kirigami.Theme.Window
+            Kirigami.Theme.inherit: false
+            color: Kirigami.Theme.backgroundColor
 
-            Bell {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-            }
-            ModifierKeys {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
+            QQC2.ScrollView {
+                id: contentScroll
+                anchors {
+                    fill: parent
+                    leftMargin: Kirigami.Units.largeSpacing
+                }
+                contentWidth: availableWidth - contentItem.leftMargin - contentItem.rightMargin
 
-            }
-            KeyboardFilters {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
+                StackLayout {
+                    id: stackView
+                    width: contentScroll.width
+                    currentIndex: listView.currentIndex
 
-            }
-            MouseNavigation {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-
-            }
-            ScreenReader {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
+                    Bell {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                    ModifierKeys {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                    KeyboardFilters {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                    MouseNavigation {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                    ScreenReader {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                    ShakeCursor {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+                }
             }
         }
     }

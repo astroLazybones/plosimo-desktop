@@ -21,7 +21,6 @@ Kicker.SubMenu {
     property bool aboutToBeDestroyed: false
 
     visible: false
-    flags: Qt.WindowStaysOnTopHint
     hideOnWindowDeactivate: kicker.hideOnWindowDeactivate
     location: PlasmaCore.Types.Floating
     offset: Kirigami.Units.smallSpacing
@@ -72,7 +71,7 @@ Kicker.SubMenu {
         Kicker.FunnelModel {
             id: funnelModel
 
-            property bool sorted: sourceModel.hasOwnProperty("sorted") ? sourceModel.sorted : false
+            property bool sorted: sourceModel?.sorted ?? false
 
             Component.onCompleted: {
                 kicker.reset.connect(funnelModel.reset);

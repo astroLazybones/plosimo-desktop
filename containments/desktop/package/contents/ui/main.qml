@@ -15,7 +15,6 @@ import org.kde.ksvg 1.0 as KSvg
 import org.kde.kquickcontrolsaddons 2.0 as KQuickControlsAddons
 import org.kde.kirigami 2.20 as Kirigami
 
-import org.kde.private.desktopcontainment.desktop 0.1 as Desktop
 import org.kde.private.desktopcontainment.folder 0.1 as Folder
 
 import org.kde.plasma.private.containmentlayoutmanager 1.0 as ContainmentLayoutManager
@@ -341,6 +340,8 @@ ContainmentItem {
                     if (newCont && newCont.plasmoid !== Plasmoid) {
                         const newPos = newCont.mapFromApplet(Plasmoid, pos.x, pos.y);
 
+                        // First go out of applet edit mode, get rid of the config overlay, release mouse grabs in preparation of applet reparenting
+                        cancelEdit();
                         newCont.Plasmoid.addApplet(appletContainer.applet.plasmoid, Qt.rect(newPos.x, newPos.y, appletContainer.applet.width, appletContainer.applet.height));
                         appletsLayout.hidePlaceHolder();
                     }
@@ -387,7 +388,7 @@ ContainmentItem {
 
         PlasmaCore.Action {
             id: configAction
-            text: i18n("Configure Desktop and Wallpaper…")
+            text: i18n("Desktop and Wallpaper")
             icon.name: "preferences-desktop-wallpaper"
             shortcut: "alt+d,alt+s"
             onTriggered: Plasmoid.containment.configureRequested(Plasmoid)

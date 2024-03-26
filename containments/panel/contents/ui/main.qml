@@ -108,6 +108,8 @@ ContainmentItem {
         const component = Qt.createComponent("ConfigOverlay.qml");
         root.configOverlay = component.createObject(root, {
             "anchors.fill": dropArea,
+            "anchors.rightMargin": root.isHorizontal ? toolBox.width : 0,
+            "anchors.bottomMargin": !root.isHorizontal ? toolBox.height : 0,
         });
         component.destroy();
     }
@@ -419,6 +421,27 @@ ContainmentItem {
             flow: isHorizontal ? GridLayout.LeftToRight : GridLayout.TopToBottom
             layoutDirection: Qt.application.layoutDirection
         }
+    }
+    MouseArea {
+        anchors.fill: parent
+        visible: Plasmoid.corona.editMode && !Plasmoid.userConfiguring
+        hoverEnabled: true
+        onClicked: Plasmoid.internalAction("configure").trigger()
+        Rectangle {
+            anchors.fill: parent
+            color: Kirigami.Theme.highlightColor
+            opacity: 0.5
+            visible: parent.containsMouse
+        }
+        PlasmaCore.ToolTipArea {
+            id: toolTipArea
+            anchors.fill: parent
+            mainText: Plasmoid.internalAction("configure").text
+            icon: "configure"
+        }
+        Accessible.name: Plasmoid.internalAction("configure").text
+        Accessible.description: i18nd("plasma_shell_org.kde.plasma.desktop", "Open Panel configuration ui")
+        Accessible.role: Accessible.Button
     }
 //END UI elements
 }

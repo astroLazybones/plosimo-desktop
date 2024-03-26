@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_folderview\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-06 00:39+0000\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
 "PO-Revision-Date: 2008-12-29 16:21+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -459,10 +459,11 @@ msgid ""
 "performance issues. Please consider moving some of them elsewhere."
 msgstr ""
 
-#: package/contents/ui/main.qml:390
-#, kde-format
-msgid "Configure Desktop and Wallpaper…"
-msgstr ""
+#: package/contents/ui/main.qml:391
+#, fuzzy, kde-format
+#| msgid "Set as &Wallpaper"
+msgid "Desktop and Wallpaper"
+msgstr "ওয়াল-পেপার রূপে নির্ধারণ করুন (&W)"
 
 #: plugins/folder/directorypicker.cpp:32
 #, fuzzy, kde-format
@@ -470,40 +471,40 @@ msgstr ""
 msgid "Select Folder"
 msgstr "সমগ্র নির্বাচন করুন"
 
-#: plugins/folder/foldermodel.cpp:466
+#: plugins/folder/foldermodel.cpp:468
 #, kde-format
 msgid "&Refresh Desktop"
 msgstr ""
 
-#: plugins/folder/foldermodel.cpp:466 plugins/folder/foldermodel.cpp:1630
+#: plugins/folder/foldermodel.cpp:468 plugins/folder/foldermodel.cpp:1633
 #, kde-format
 msgid "&Refresh View"
 msgstr ""
 
-#: plugins/folder/foldermodel.cpp:1639
+#: plugins/folder/foldermodel.cpp:1642
 #, fuzzy, kde-format
 #| msgid "&Empty Trash Bin"
 msgid "&Empty Trash"
 msgstr "আবর্জনার বাক্স ফাঁকা করুন (&E)"
 
-#: plugins/folder/foldermodel.cpp:1642
+#: plugins/folder/foldermodel.cpp:1645
 #, fuzzy, kde-format
 #| msgid "&Restore"
 msgctxt "Restore from trash"
 msgid "Restore"
 msgstr "পুনরুদ্ধার (&R)"
 
-#: plugins/folder/foldermodel.cpp:1645
+#: plugins/folder/foldermodel.cpp:1648
 #, kde-format
 msgid "&Open"
 msgstr "খুলুন (&O)"
 
-#: plugins/folder/foldermodel.cpp:1762
+#: plugins/folder/foldermodel.cpp:1765
 #, kde-format
 msgid "&Paste"
 msgstr "পেস্ট করুন (&P)"
 
-#: plugins/folder/foldermodel.cpp:1879
+#: plugins/folder/foldermodel.cpp:1881
 #, kde-format
 msgid "&Properties"
 msgstr "বিবিধ বৈশিষ্ট্য (&P)"
@@ -800,9 +801,6 @@ msgstr ""
 
 #~ msgid "C&ancel"
 #~ msgstr "বাতিল করুন (&a)"
-
-#~ msgid "Set as &Wallpaper"
-#~ msgstr "ওয়াল-পেপার রূপে নির্ধারণ করুন (&W)"
 
 #, fuzzy
 #~| msgid "Create New"

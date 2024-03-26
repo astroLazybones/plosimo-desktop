@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
-"PO-Revision-Date: 2024-01-28 19:53-0600\n"
+"POT-Creation-Date: 2024-03-26 00:39+0000\n"
+"PO-Revision-Date: 2024-03-11 07:46-0500\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: contents/activitymanager/ActivityItem.qml:205
 msgid "Currently being used"
@@ -65,15 +65,11 @@ msgstr "ਸਰਗਰਮੀ ਦੀ ਸੰਰਚਨਾ"
 msgid "Delete"
 msgstr "ਹਟਾਓ"
 
-#: contents/applet/AppletError.qml:128
-msgid "Sorry! There was an error loading %1."
-msgstr "ਅਫਸੋਸ! %1 ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਹੈ।"
-
-#: contents/applet/AppletError.qml:167
+#: contents/applet/AppletError.qml:164
 msgid "Copy to Clipboard"
 msgstr "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ"
 
-#: contents/applet/AppletError.qml:190
+#: contents/applet/AppletError.qml:187
 msgid "View Error Details…"
 msgstr "…ਗਲਤੀ ਵੇਰਵੇ ਵੇਖੋ"
 
@@ -257,65 +253,69 @@ msgstr "ਮਾਊਸ ਕਾਰਵਾਈਆਂ"
 msgid "Input Here"
 msgstr "ਇੱਥੇ ਇਨਪੁਟ ਕਰੋ"
 
-#: contents/configuration/PanelConfiguration.qml:98
+#: contents/configuration/PanelConfiguration.qml:97
 msgid "Panel Settings"
 msgstr "ਪੈਨਲ ਸੈਟਿੰਗਾਂ"
 
-#: contents/configuration/PanelConfiguration.qml:105
+#: contents/configuration/PanelConfiguration.qml:104
 msgid "Add Spacer"
 msgstr "ਸਪੇਸਰ ਜੋੜੋ"
 
-#: contents/configuration/PanelConfiguration.qml:108
+#: contents/configuration/PanelConfiguration.qml:107
 msgid "Add spacer widget to the panel"
 msgstr "ਪੈਨਲ ਵਿੱਚ ਸਪੇਸਰ ਵਿਜੈੱਟ ਜੋੜੋ"
 
-#: contents/configuration/PanelConfiguration.qml:115
+#: contents/configuration/PanelConfiguration.qml:114
 msgid "Add Widgets…"
 msgstr "…ਵਿਜੈਟ ਜੋੜੋ"
 
-#: contents/configuration/PanelConfiguration.qml:118
+#: contents/configuration/PanelConfiguration.qml:117
 msgid "Open the widget selector to drag and drop widgets to the panel"
 msgstr ""
 
-#: contents/configuration/PanelConfiguration.qml:147
+#: contents/configuration/PanelConfiguration.qml:146
 msgid "Position"
 msgstr "ਸਥਿਤੀ"
 
-#: contents/configuration/PanelConfiguration.qml:152
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:151
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Top"
 msgstr "ਉੱਤੇ"
 
-#: contents/configuration/PanelConfiguration.qml:153
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:152
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Right"
 msgstr "ਸੱਜੇ"
 
-#: contents/configuration/PanelConfiguration.qml:154
-#: contents/configuration/PanelConfiguration.qml:267
+#: contents/configuration/PanelConfiguration.qml:153
+#: contents/configuration/PanelConfiguration.qml:266
 msgid "Left"
 msgstr "ਖੱਬੇ"
 
-#: contents/configuration/PanelConfiguration.qml:155
-#: contents/configuration/PanelConfiguration.qml:269
+#: contents/configuration/PanelConfiguration.qml:154
+#: contents/configuration/PanelConfiguration.qml:268
 msgid "Bottom"
 msgstr "ਹੇਠਾਂ"
 
-#: contents/configuration/PanelConfiguration.qml:175
+#: contents/configuration/PanelConfiguration.qml:174
 msgid "Set Position…"
 msgstr "ਸਥਿਤੀ ਸੈੱਟ ਕਰੋ…"
 
-#: contents/configuration/PanelConfiguration.qml:202
+#: contents/configuration/PanelConfiguration.qml:201
 msgid "Alignment"
 msgstr "ਸਫ਼ਬੰਦੀ"
 
-#: contents/configuration/PanelConfiguration.qml:268
+#: contents/configuration/PanelConfiguration.qml:267
 msgid "Center"
 msgstr "ਕੇਂਦਰ"
 
+#: contents/configuration/PanelConfiguration.qml:290
+msgid "Height"
+msgstr "ਉਚਾਈ"
+
 #: contents/configuration/PanelConfiguration.qml:291
-msgid "Length"
-msgstr "ਲੰਬਾਈ"
+msgid "Width"
+msgstr "ਚੌੜਾਈ"
 
 #: contents/configuration/PanelConfiguration.qml:310
 msgid "Fill height"
@@ -377,38 +377,38 @@ msgstr "ਸਟਾਈਲ"
 msgid "Floating"
 msgstr "ਤਰਦਾ"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Panel Width:"
 msgstr "ਪੈਨਲ ਦੀ ਚੌੜਾਈ:"
 
-#: contents/configuration/PanelConfiguration.qml:523
+#: contents/configuration/PanelConfiguration.qml:520
 msgid "Height:"
 msgstr "ਉਚਾਈ:"
 
-#: contents/configuration/PanelConfiguration.qml:558
+#: contents/configuration/PanelConfiguration.qml:555
 msgid "Focus shortcut:"
 msgstr "ਫੋਕਸ ਸ਼ਾਰਟਕੱਟ:"
 
-#: contents/configuration/PanelConfiguration.qml:569
+#: contents/configuration/PanelConfiguration.qml:566
 msgid "Press this keyboard shortcut to move focus to the Panel"
-msgstr ""
+msgstr "ਫੋਕਸ ਨੂੰ ਪੈਨਲ ਉੱਤੇ ਭੇਜਣ ਲਈ ਇਸ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਦਬਾਓ"
 
-#: contents/configuration/PanelConfiguration.qml:585
+#: contents/configuration/PanelConfiguration.qml:582
 msgctxt "@action:button Delete the panel"
 msgid "Delete Panel"
 msgstr "ਪੈਨਲ ਨੂੰ ਹਟਾਓ"
 
-#: contents/configuration/PanelConfiguration.qml:588
+#: contents/configuration/PanelConfiguration.qml:585
 msgid "Remove this panel; this action is undo-able"
 msgstr "ਇਹ ਪੈਨਲ ਹਟਾਓ; ਇਹ ਕਾਰਵਾਈ ਵਾਪਸ ਲੈਣ ਯੋਗ ਹੈ"
 
 #: contents/configuration/panelconfiguration/Ruler.qml:30
 msgid "Drag to change maximum height."
-msgstr ""
+msgstr "ਵੱਧ ਤੋਂ ਵੱਧ ਉਚਾਈ ਬਦਲਣ ਲਈ ਖਿੱਚੋ।"
 
 #: contents/configuration/panelconfiguration/Ruler.qml:30
 msgid "Drag to change maximum width."
-msgstr ""
+msgstr "ਵੱਧ ਤੋਂ ਵੱਧ ਚੌੜਾਈ ਬਦਲਣ ਲਈ ਖਿੱਚੋ।"
 
 #: contents/configuration/panelconfiguration/Ruler.qml:30
 #: contents/configuration/panelconfiguration/Ruler.qml:31
@@ -417,11 +417,11 @@ msgstr "ਮੁੜ-ਸੈਟ ਕਰਨ ਲਈ ਦੋ ਵਾਰ ਕਲਿੱਕ �
 
 #: contents/configuration/panelconfiguration/Ruler.qml:31
 msgid "Drag to change minimum height."
-msgstr ""
+msgstr "ਘੱਟੋ-ਘੱਟ ਉਚਾਈ ਬਦਲਣ ਲਈ ਖਿੱਚੋ।"
 
 #: contents/configuration/panelconfiguration/Ruler.qml:31
 msgid "Drag to change minimum width."
-msgstr ""
+msgstr "ਘੱਟੋ-ਘੱਟ ਚੌੜਾਈ ਬਦਲਣ ਲਈ ਖਿੱਚੋ।"
 
 #: contents/configuration/panelconfiguration/Ruler.qml:78
 msgid ""
@@ -430,13 +430,15 @@ msgid ""
 msgstr ""
 
 #: contents/configuration/ShellContainmentConfiguration.qml:19
-msgid "Panels and Desktops Management"
+#, fuzzy
+#| msgid "Panels and Desktops Management"
+msgid "Panel and Desktop Management"
 msgstr "ਪੈਨਲ ਅਤੇ ਡੈਸਕਟਾਪ ਇੰਤਜ਼ਾਮ"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:34
 msgid ""
 "You can drag Panels and Desktops around to move them to different screens."
-msgstr ""
+msgstr "ਤੁਸੀਂ ਪੈਨਲਾਂ ਅਤੇ ਡੈਸਕਟਾਪਾਂ ਨੂੰ ਵੱਖ-ਵੱਖ ਸਕਰੀਨਾਂ ਉੱਤੇ ਭੇਜਣ ਲਈ ਉਹਨਾਂ ਨੂੰ ਖਿੱਚ ਸਕਦੇ ਹੋ।"
 
 #: contents/configuration/ShellContainmentConfiguration.qml:44
 msgid "Close"
@@ -510,16 +512,22 @@ msgstr "ਕੈਟਾਗਰੀਆਂ"
 #: contents/explorer/WidgetExplorer.qml:215
 msgid "Confirm Removal Of One Widget"
 msgid_plural "Confirm Removal Of %1 Widgets"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ਇੱਕ ਵਿਜੈਟ ਨੂੰ ਹਟਾਉਣ ਦੀ ਤਸਦੀਕ"
+msgstr[1] "%1 ਵਿਜੈਟਾਂ ਨੂੰ ਹਟਾਉਣ ਦੀ ਤਸਦੀਕ"
 
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets matched the search terms"
-msgstr ""
+msgstr "ਖੋਜੇ ਸ਼ਬਦਾਂ ਨਾਲ ਮਿਲਦਾ ਕੋਈ ਵਿਜੈਟ ਨਹੀਂ ਹੈ"
 
 #: contents/explorer/WidgetExplorer.qml:295
 msgid "No widgets available"
 msgstr "ਕੋਈ ਵਿਜੈਟ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
+
+#~ msgid "Sorry! There was an error loading %1."
+#~ msgstr "ਅਫਸੋਸ! %1 ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਹੈ।"
+
+#~ msgid "Length"
+#~ msgstr "ਲੰਬਾਈ"
 
 #, fuzzy
 #~| msgid "Maximize Panel"
@@ -568,9 +576,6 @@ msgstr "ਕੋਈ ਵਿਜੈਟ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
 #~ msgid "Screen Edge"
 #~ msgstr "ਸਕਰੀਨ ਕੋਨਾ"
-
-#~ msgid "Width"
-#~ msgstr "ਚੌੜਾਈ"
 
 #~ msgid "Lock Widgets"
 #~ msgstr "ਵਿਦਜੈੱਟ ਲਾਕ ਕਰੋ"

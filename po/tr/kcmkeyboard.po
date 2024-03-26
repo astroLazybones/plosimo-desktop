@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kcmkeyboard\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-03 01:37+0000\n"
-"PO-Revision-Date: 2024-01-07 00:08+0300\n"
+"PO-Revision-Date: 2024-03-18 19:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.01.85\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -51,13 +51,13 @@ msgstr "Son Kullanılan Klavye Yerleşimine Geç"
 #: bindings.cpp:60
 #, kde-format
 msgid "Switch keyboard layout to %1"
-msgstr "'%1' klavye yerleşimine geç"
+msgstr "“%1” klavye yerleşimine geç"
 
 #: flags.cpp:77
 #, kde-format
 msgctxt "layout - variant"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr "%1 — %2"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, AddLayoutDialog)
 #: kcm_add_layout_dialog.ui:14
@@ -114,9 +114,9 @@ msgid ""
 "have.\n"
 msgstr ""
 "Burada klavye modelinizi ayarlayabilirsiniz. Bu ayar klavye yerleşiminizden "
-"bağımsızdır ve \"donanım\" modeli; yani, klavyenizin üretilme biçimidir. "
+"bağımsızdır ve “donanım” modeli; yani, klavyenizin üretilme biçimidir. "
 "Bilgisayarınızla birlikte gelen çağdaş klavyelerde genellikle fazladan iki "
-"düğme bulunur ve bunlara \"104 düğmeli\" denir. Ne tür bir klavyeye sahip "
+"düğme bulunur ve bunlara “104 düğmeli” denir. Ne tür bir klavyeye sahip "
 "olduğunuzu bilmiyorsanız en iyisi bu ayara dokunmayın.\n"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tabLayouts)
@@ -132,7 +132,7 @@ msgid ""
 "If you select \"Application\" or \"Window\" switching policy, changing the "
 "keyboard layout will only affect the current application or window."
 msgstr ""
-"Eğer \"Uygulama\" veya \"Pencere\" değiştirme ilkesini seçerseniz, klavye "
+"Eğer ‘Uygulama’ veya ‘Pencere’ değiştirme ilkesini seçerseniz klavye "
 "yerleşimini değiştirmek yalnızca geçerli uygulama veya pencereyi etkiler."
 
 #. i18n: ectx: property (title), widget (QGroupBox, switchingPolicyGroupBox)
@@ -412,7 +412,7 @@ msgid ""
 "configure Plasma not to set NumLock state."
 msgstr ""
 "Destekleniyorsa Plasma başlatıldıktan sonra Sayı Kilidi düğmesinin durumunu "
-"belirlemenizi sağlar.<p>Sayı Kilidi düğmesini açık, kapalı veya Plasma'nın "
+"belirlemenizi sağlar.<p>Sayı Kilidi düğmesini açık, kapalı veya Plasma’nın "
 "değiştirmeyeceği şekilde ayarlayabilirsiniz."
 
 #. i18n: ectx: property (title), widget (QGroupBox, numlockGroupBox)

@@ -366,7 +366,7 @@ int Positioner::move(const QVariantList &moves)
 
     for (int i = 0; i < moves.count(); ++i) {
         const int isFrom = (i % 2 == 0);
-        const int v = moves[i].toInt();
+        int v = moves[i].toInt();
 
         if (isFrom) {
             if (m_proxyToSource.contains(v)) {
@@ -374,9 +374,14 @@ int Positioner::move(const QVariantList &moves)
             } else {
                 sourceRows.append(-1);
             }
+            fromIndices.append(v);
+        } else {
+            // if the to position is taken by something different than ourself, take a new to position
+            while (toIndices.contains(v) && moves[i - 1].toInt() != v) {
+                ++v;
+            }
+            toIndices.append(v);
         }
-
-        (isFrom ? fromIndices : toIndices).append(v);
     }
 
     const int oldCount = rowCount();
@@ -600,7 +605,6 @@ void Positioner::sourceRowsAboutToBeInserted(const QModelIndex &parent, int star
         }
     } else {
         beginInsertRows(parent, start, end);
-        beginInsertRows(parent, start, end);
         m_beginInsertRowsCalled = true;
     }
 }
@@ -621,7 +625,7 @@ void Positioner::sourceRowsAboutToBeRemoved(const QModelIndex &parent, int first
 
         for (int i = first; i <= last; ++i) {
             int proxyRow = m_sourceToProxy.take(i);
-            m_proxyToSource.remove(proxyRow);
+            // Don't touch m_proxyToSource yet, as beginRemoveRows was not emitted yet
             m_pendingChanges << createIndex(proxyRow, 0);
         }
 
@@ -642,10 +646,13 @@ void Positioner::sourceRowsAboutToBeRemoved(const QModelIndex &parent, int first
             }
         }
 
-        m_proxyToSource = newProxyToSource;
-        m_sourceToProxy = newSourceToProxy;
-
-        int newLast = lastRow();
+        int newLast = 0;
+        // Duplicate lastRow instead of assigning m_proxyToSource now as rowCount() can't be changed before beginRemoveRows
+        if (!newProxyToSource.isEmpty()) {
+            QList<int> keys(newProxyToSource.keys());
+            std::sort(keys.begin(), keys.end());
+            newLast = keys.last();
+        }
 
         if (oldLast > newLast) {
             int diff = oldLast - newLast;
@@ -653,6 +660,9 @@ void Positioner::sourceRowsAboutToBeRemoved(const QModelIndex &parent, int first
         } else {
             m_ignoreNextTransaction = true;
         }
+
+        m_proxyToSource = newProxyToSource;
+        m_sourceToProxy = newSourceToProxy;
     } else {
         beginRemoveRows(parent, first, last);
     }

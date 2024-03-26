@@ -144,12 +144,13 @@
         "Name[sl]": "Ločilnik robov",
         "Name[sv]": "Marginalavdelare",
         "Name[ta]": "விளிம்புகளை பிரிப்பான்",
-        "Name[tr]": "Kenar Boşlukları Ayırıcı",
+        "Name[tr]": "Kenar Boşlukları Ayırıcısı",
         "Name[uk]": "Роздільник полів",
         "Name[vi]": "Phần phân cách viền",
         "Name[x-test]": "xxMargins Separatorxx",
         "Name[zh_CN]": "边距分隔符",
-        "Name[zh_TW]": "邊際分隔器"
+        "Name[zh_TW]": "邊際分隔器",
+        "Website": "https://www.kde.org/plasma-desktop"
     },
     "Keywords": "separator",
     "Keywords[ar]": "فاصل",

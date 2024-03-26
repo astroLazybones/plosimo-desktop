@@ -7,7 +7,7 @@ set(PROJECT_VERSION_MAJOR 6)
 
 set(PROJECT_DEP_VERSION "6.0.80")
 set(QT_MIN_VERSION "6.6.0")
-set(KF6_MIN_VERSION "5.240.0")
+set(KF6_MIN_VERSION "6.0.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.85")
 set(ACCOUNTSQT_DEP_VERSION "1.13")
 
@@ -288,6 +288,7 @@ if(X11_Xkb_FOUND AND XCB_XKB_FOUND)
     add_subdirectory(kaccess)
 endif()
 install(FILES org.kde.plasmashell.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES kde-mimeapps.list DESTINATION ${KDE_INSTALL_APPDIR})
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)

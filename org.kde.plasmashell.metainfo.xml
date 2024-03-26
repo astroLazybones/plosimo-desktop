@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component>
   <id>org.kde.plasmashell</id>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KDE Plasma Desktop</name>
@@ -27,6 +30,7 @@
   <name xml:lang="hu">KDE Plasma Desktop</name>
   <name xml:lang="ia">KDE Plasma Desktop (Scriptorio KDE Plasma)</name>
   <name xml:lang="id">KDE Plasma Desktop</name>
+  <name xml:lang="is">KDE Plasma skjáborð</name>
   <name xml:lang="it">Desktop KDE Plasma</name>
   <name xml:lang="ka">KDE Plasma სამუშაო მაგდა</name>
   <name xml:lang="ko">KDE Plasma 데스크톱</name>
@@ -80,6 +84,7 @@
   <summary xml:lang="hu">A KDE teljes asztali élménye. Egyszerű, mégis hatékony, ha szükség van rá</summary>
   <summary xml:lang="ia">Complete experientia de scriptorio de KDE. Simple per definition, potente quando il necessita</summary>
   <summary xml:lang="id">KDE adalah desktop lengkap yang berpengalaman. Sederhana secara baku, bertenaga ketika diperlukan</summary>
+  <summary xml:lang="is">Fullbúið skjáborðsumhverfi frá KDE. Einfalt í eðli sínu, öflugt þegar á þarf að halda</summary>
   <summary xml:lang="it">L'esperienza completa del desktop da KDE. Semplice nelle scelte predefinite, potente quando c'è bisogno</summary>
   <summary xml:lang="ka">KDE-ის სრული სამუშაო გარემო. ნაგულისხმებად მარტივი, მძლავრი, როცა საჭიროა</summary>
   <summary xml:lang="ko">KDE 데스크톱 사용자 환경입니다. 첫 시작은 간단하게, 필요할 때에는 강력하게</summary>
@@ -103,7 +108,7 @@
   <summary xml:lang="sv">KDE:s fullständiga skrivbordsupplevelse. Normalt enkel, kraftfull vid behov</summary>
   <summary xml:lang="ta">கே.டீ.யீ.யின் முழு பணிமேடை அனுபவம். இயல்பிருப்பில் எளிமையாகவும், தேவைப்படும்போது ஆற்றல்வாய்ந்ததாகவும் இருக்கும்.</summary>
   <summary xml:lang="tg">Таҷрибаомӯзии пурра бо мизи кории KDE. Осонтарин дар асл ва пурқувват бо дархост мебошад</summary>
-  <summary xml:lang="tr">KDE'nin tam masaüstü deneyimi. Özünde yalın, gerektiğinde güçlü</summary>
+  <summary xml:lang="tr">KDE’nin tam masaüstü deneyimi. Özünde yalın, gerektiğinde güçlü</summary>
   <summary xml:lang="uk">Повноцінне стільничне середовище KDE. Типово просте, але потужне, якщо це потрібно</summary>
   <summary xml:lang="vi">Trải nghiệm bàn làm việc hoàn chỉnh của KDE. Đơn giản lúc bắt đầu, mạnh mẽ khi cần thiết</summary>
   <summary xml:lang="x-test">xxKDE's complete desktop experience. Simple by default, powerful when neededxx</summary>
@@ -111,6 +116,7 @@
   <summary xml:lang="zh-TW">KDE 的完整桌面體驗。預設簡潔，需要時足夠強大</summary>
   <url type="homepage">https://www.kde.org/plasma-desktop</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=plasmashell</url>
+  <url type="vcs-browser">https://invent.kde.org/plasma/plasma-desktop</url>
   <project_group>KDE</project_group>
   <provides>
     <binary>plasmashell</binary>
@@ -141,6 +147,7 @@
       <caption xml:lang="hu">Asztali környezetként használt Plasma</caption>
       <caption xml:lang="ia">Plasma es usate como scriptorio</caption>
       <caption xml:lang="id">Plasma telah digunakan sebagai desktop</caption>
+      <caption xml:lang="is">Plasma í notkun sem skjáborð</caption>
       <caption xml:lang="it">Plasma usato come desktop</caption>
       <caption xml:lang="ka">Plasma გამოიყენება, როგორც სამუშაო მაგიდა</caption>
       <caption xml:lang="ko">Plasma를 데스크톱으로 사용함</caption>
@@ -175,9 +182,9 @@
   </screenshots>
   <compulsory_for_desktop>KDE</compulsory_for_desktop>
   <releases>
-    <release version="5.93.0" date="2024-01-31"/>
+    <release version="6.0.0" date="2024-02-28"/>
+    <release version="5.27.11" date="2024-03-06"/>
     <release version="5.27.10" date="2023-12-05"/>
     <release version="5.27.9" date="2023-10-24"/>
-    <release version="5.27.8" date="2023-09-12"/>
   </releases>
 </component>

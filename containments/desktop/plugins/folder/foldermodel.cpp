@@ -204,20 +204,6 @@ FolderModel::FolderModel(QObject *parent)
         }
     });
 
-    // Position dropped items at the desired target position.
-    connect(this, &QAbstractItemModel::rowsInserted, this, [this](const QModelIndex &parent, int first, int last) {
-        for (int i = first; i <= last; ++i) {
-            const auto idx = index(i, 0, parent);
-            const auto url = itemForIndex(idx).url();
-            auto it = m_dropTargetPositions.find(url.fileName());
-            if (it != m_dropTargetPositions.end()) {
-                const auto pos = it.value();
-                m_dropTargetPositions.erase(it);
-                Q_EMIT move(pos.x(), pos.y(), {url});
-            }
-        }
-    });
-
     /*
      * Dropped files may not actually show up as new files, e.g. when we overwrite
      * an existing file. Or files that fail to be listed by the dirLister, or...
@@ -242,6 +228,22 @@ FolderModel::FolderModel(QObject *parent)
     connect(m_selectionModel, &QItemSelectionModel::selectionChanged, this, &FolderModel::selectionChanged);
 
     setSourceModel(m_dirModel);
+
+    // Position dropped items at the desired target position.
+    // The connection is established after setSourceModel because we need it to be executed after any connection to rowsInserted by proxy models
+    // See BUG:481254
+    connect(this, &QAbstractItemModel::rowsInserted, this, [this](const QModelIndex &parent, int first, int last) {
+        for (int i = first; i <= last; ++i) {
+            const auto idx = index(i, 0, parent);
+            const auto url = itemForIndex(idx).url();
+            auto it = m_dropTargetPositions.find(url.fileName());
+            if (it != m_dropTargetPositions.end()) {
+                const auto pos = it.value();
+                m_dropTargetPositions.erase(it);
+                Q_EMIT move(pos.x(), pos.y(), {url});
+            }
+        }
+    });
 
     setSortLocaleAware(true);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
@@ -666,14 +668,12 @@ void FolderModel::setFilterPattern(const QString &pattern)
     m_filterPattern = pattern;
     m_filterPatternMatchAll = (pattern == QLatin1String("*"));
 
-    const QStringList patterns = pattern.split(QLatin1Char(' '));
+    const QList<QStringView> patterns = QStringView(pattern).split(QLatin1Char(' '));
     m_regExps.clear();
     m_regExps.reserve(patterns.count());
-
-    for (const QString &pattern : patterns) {
-        auto rx = QRegularExpression::fromWildcard(pattern);
-        m_regExps.append(rx);
-    }
+    std::transform(patterns.cbegin(), patterns.cend(), std::back_inserter(m_regExps), [](QStringView pattern) {
+        return QRegularExpression::fromWildcard(pattern);
+    });
 
     invalidateFilterIfComplete();
 
@@ -1405,6 +1405,9 @@ bool FolderModel::isDir(const QModelIndex &index, const KDirModel *dirModel) con
         }
 
         const QUrl url(file.readUrl());
+        if (!url.isValid()) {
+            return false;
+        }
 
         // Check if we already have a running StatJob for this URL.
         if (m_isDirJobs.contains(item.url())) {
@@ -1418,7 +1421,7 @@ bool FolderModel::isDir(const QModelIndex &index, const KDirModel *dirModel) con
             return true;
         }
 
-        if (KProtocolInfo::protocolClass(url.scheme()) != QLatin1String(":local")) {
+        if (!url.scheme().isEmpty() && KProtocolInfo::protocolClass(url.scheme()) != QLatin1String(":local")) {
             return false;
         }
 
@@ -1798,7 +1801,6 @@ void FolderModel::openContextMenu(QQuickItem *visualParent, Qt::KeyboardModifier
         menu->addSeparator();
         menu->addAction(m_actionCollection.action(QStringLiteral("paste")));
         menu->addAction(m_actionCollection.action(QStringLiteral("undo")));
-        menu->addAction(m_actionCollection.action(QStringLiteral("refresh")));
         menu->addAction(m_actionCollection.action(QStringLiteral("emptyTrash")));
         menu->addSeparator();
 

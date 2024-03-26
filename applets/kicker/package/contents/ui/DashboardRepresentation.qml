@@ -192,7 +192,7 @@ Kicker.DashboardWindow {
             id: containmentInterface
         }
 
-        TextEdit {
+        TextInput {
             id: searchField
 
             width: 0
@@ -869,6 +869,8 @@ Kicker.DashboardWindow {
 
                                 anchors {
                                     fill: parent
+                                    topMargin: highlightItemSvg.margins.top
+                                    bottomMargin: highlightItemSvg.margins.bottom
                                     leftMargin: highlightItemSvg.margins.left
                                     rightMargin: highlightItemSvg.margins.right
                                 }
